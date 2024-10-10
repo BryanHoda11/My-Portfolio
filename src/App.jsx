@@ -133,22 +133,19 @@ function App() {
               <h3 className='sm:text-lg pb-4'> Children Welfare Clara's College of Commerce</h3>
               <p className='text-sm'>I persued my B.COM through this college located in Yari Road, Versova, Andheri West. My overall experience throughout my 3 years was really fun. Learnt a lot of new things, met new people & gathered a ton of real world knowledge! I was thrilled and excited as <span className='font-bold'>I topped my college in 4 out of the total 6 semesters</span>, which was a big morale booster for me. Grateful to this college for where I am today.❤️</p>
               <p className='text-sm'>College's website - <a href='https://clarascollegeofcommerce.edu.in/' target='_blank' className='underline text-blue-700 cursor-pointer'>https://clarascollegeofcommerce.edu.in/</a></p>
-              <p className='pt-7 text-center sm:text-start'>Graduation CGPA - <span className='font-bold'>8.40</span></p>
+              <p className='pt-7 text-center sm:text-start'>Graduation CGPA - <span className='text-red-600 text-xs sm:text-sm'>Note* : I haven't yet recieved my marksheet from university. <span className='font-bold'>I have no backlogs.</span> Will update this as soon as I get my result.</span></p>
             </div>
           </div>
         </div>
       </div>
 
       <div className="my-views">
-        <h2 className='text-blue-600 text-xl px-12 py-7 text-center md:text-start'>HOW & WHY THIS FIELD ?</h2>
+        <h2 className='text-blue-600 text-xl px-12 text-center md:text-start'>HOW & WHY THIS FIELD ?</h2>
         <div className="views-container flex flex-col items-center lg:items-baseline lg:flex-row gap-4 px-3 lg:px-10 py-6">
-          <div className="box relative flex items-center bg-gradient-to-b from-blue-700 to-blue-800 h-auto w-full sm:w-[95%] lg:w-1/2 text-white rounded-lg px-4 py-4">
-            <p className='text-center text-sm lg:text-lg py-3'>Now, I know I am coming from a Commerce background but, I am an IT geek. When my dad gave me my first computer when I was small I was crazy for it since then and I wanted to pursue Software Engineering when I grew up. But since I selected Commerce after 10th I couldn't do engineering. I then came across Chattered Accountancy (CA) and then thought to do that as it's one the best careers to make in Commerce field.</p>
+          <div className="box relative rounded-lg bg-white shadow-lg shadow-blue-300 mx-auto h-auto w-full sm:w-[95%] lg:w-[70%] text-whi px-4 py-4">
+            <p className='text-sm lg:text-lg py-3 w-[90%] sm:w-[60%]'>Coming from Commerce background I developed interest in IT. First I got introduced to it as a subject but later on, when I started learning about IT deeply in my degree and explored career options, my interest grew in it. Therefore, I decided to choose IT as my career specializing in <span className='font-bold'>Frontend Web Development & Graphic Designing.</span></p>
 
-          </div>
-
-          <div className="box relative flex items-center bg-gradient-to-b from-blue-700 to-blue-800 h-auto w-full sm:w-[95%] lg:w-1/2 text-white rounded-lg px-4 py-4">
-            <p className='text-center text-sm lg:text-lg py-3'>But then, in my second year of graduation (SY B.COM), I came across Web Development & Graphic Designing and eventually my interest grew in them and I started my course in vacations after my second year got over in April 2023. Since then I didn't look back and kept learning new technologies from basic to advanced and applying what I learn in my projects as I believe in "LEARNING BY DOING" method.</p>
+            <p className='text-sm lg:text-lg py-3 w-[90%] sm:w-[60%] sm:ml-auto'><span className='font-bold'>I love to learn and develop new skills</span>. These skills help me explore new options and learn more which inturn may help the company I work in as a whole. Since I believe in exploring new technologies, <span className='font-bold'>I am open to learning which is vital in this industry</span> and want to help the company and myself to grow and gain more knowledge and experience. Being able to perform as per the desired requirements and making the company proud with my contributions is my main goal.</p>
           </div>
         </div>
       </div>
@@ -157,9 +154,9 @@ function App() {
         <h2 className='text-blue-600 text-xl px-12 text-center md:text-start'>MY SKILLS</h2>
 
         <div className="skills-container flex mx-auto items-center gap-4 my-8 py-5 w-[95%]">
-          <Marquee autoFill speed={70}>
+          <Marquee autoFill speed={100}>
             {TechSkills.map((T) => (
-              <div key={T.name} className="card cursor-pointer h-auto min-w-[350px] px-5 py-5 my-6 mx-4 flex flex-col items-center justify-center rounded-lg shadow-md shadow-blue-300">
+              <div key={T.name} className="card cursor-pointer h-auto min-w-[350px] px-5 py-5 my-6 mx-4 flex flex-col items-center justify-center rounded-lg bg-white shadow-md shadow-blue-300">
                 <div className='py-5 hover:scale-110 transition-all duration-300 ease-in'>{T.icon}</div>
                 <h3 className='text-sm'>{T.name}</h3>
               </div>
@@ -255,24 +252,24 @@ function App() {
       </div>
 
       <div className="strengths-weakness my-10">
-        <h2 className='text-blue-600 text-xl px-12 py-7'>NOW NO ONE IS PERFECT, SO HERE ARE MY :</h2>
+        <h2 className='text-blue-600 text-xl px-12 py-7 text-center md:text-start'>NOW NO ONE IS PERFECT, SO HERE ARE MY :</h2>
         <div className="trengths-weakness-container flex flex-col items-center lg:items-baseline lg:flex-row gap-4 px-3 lg:px-10 py-6">
           <div className="box relative mx-4 flex flex-col bg-blue-600 hover:scale-105 transition-all duration-700 cursor-default h-auto w-full sm:w-[95%] lg:w-1/2 text-white rounded-lg px-4 py-4">
             <h3 className='font-bold flex gap-3 items-center justify-center'>STRENGHTS <span className='font-bold text-2xl'>&uarr;</span></h3>
-            <ul className='flex flex-col gap-5 pl-5 pt-4 text-sm lg:text-lg'>
-              <li>&rarr; Worked with variety of technologies & libraries along with projects.</li>
-              <li>&rarr; I create good & efficient reusable UI components with React JS for websites & web applications with responsive designs.</li>
-              <li>&rarr; Clean & maintainable code. Easy on the eyes to read.</li>
-              <li>&rarr; Good at debugging issues / problems.</li>
+            <ul className='flex flex-col gap-5 pl-5 pt-4 text-sm lg:text-lg list-disc'>
+              <li>Worked with variety of technologies & libraries in my projects.</li>
+              <li>I create good & efficient reusable UI components with React JS for websites & web applications with responsive design.</li>
+              <li>Clean & maintainable code. Easy on the eyes to read.</li>
+              <li>Good at debugging issues / problems.</li>
             </ul>
           </div>
 
           <div className="box relative mx-4 flex flex-col bg-blue-800 hover:scale-95 transition-all duration-700 cursor-default h-auto w-full sm:w-[95%] lg:w-1/2 text-white rounded-lg px-4 py-4">
             <h3 className='font-bold flex gap-3 items-center justify-center'>WEAKNESSES<span className='font-bold text-2xl'>&darr;</span></h3>
-            <ul className='flex flex-col gap-5 pl-5 pt-4 text-sm lg:text-lg'>
-              <li>&rarr; Not strong with API integration from Backend to Frontend.</li>
-              <li>&rarr; Not strong with Server Side Rendering (SSR).</li>
-              <li>&rarr; Heavily focussed on UI development rather than functional development.</li>
+            <ul className='flex flex-col gap-5 pl-5 pt-4 text-sm lg:text-lg list-disc'>
+              <li>Need more practice with API integration from Backend to Frontend.</li>
+              <li>Not strong with Server Side Rendering (SSR).</li>
+              <li>Heavily focussed on UI development rather than functional development.</li>
             </ul>
           </div>
         </div>
