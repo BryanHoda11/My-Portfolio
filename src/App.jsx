@@ -242,7 +242,7 @@ function App() {
             </li>
             <li className='flex flex-col justify-center gap-3 mx-5 my-5 h-auto min-w-[350px]'>
               <h2 className='text-xl font-bold'>12. Portfolio Website</h2>
-              <h4 className='flex items-center gap-4'><FaGithub /><a href="hhttps://github.com/BryanHoda11/Portfolio-Website" target='_blank' className='underline flex items-center gap-2 text-blue-700 hover:text-blue-800 cursor-pointer'>GitHub Link<FaExternalLinkAlt style={{fontSize:'9px'}}/></a></h4>
+              <h4 className='flex items-center gap-4'><FaGithub /><a href="https://github.com/BryanHoda11/My-Portfolio" target='_blank' className='underline flex items-center gap-2 text-blue-700 hover:text-blue-800 cursor-pointer'>GitHub Link<FaExternalLinkAlt style={{fontSize:'9px'}}/></a></h4>
               <p className='text-blue-800 text-sm opacity-60'>Tehnologies used : React JS | Tailwind CSS | Vanilla CSS</p>
               <p className='text-blue-800 text-sm opacity-60'>Libraries used : React Icons | React Fast Marquee</p>
             </li>
