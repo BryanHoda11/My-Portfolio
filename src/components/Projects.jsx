@@ -28,7 +28,7 @@ const Projects = () => {
             img: Fitfusion,
             name: '3. FitFusion Gym',
             github: <><FaGithub /> <a href="https://github.com/BryanHoda11/FitFusion-Gym-Website" target='_blank' className='underline flex items-center gap-2 text-blue-700 hover:text-blue-800 cursor-pointer'>GitHub Link</a></>,
-            link: <><a href="https://one-plus-redesign.vercel.app/" target='_blank' className='underline text-blue-700 hover:text-blue-800 cursor-pointer'>Visit Link</a></>,
+            link: <><a href="https://fitfusion-gym.vercel.app/" target='_blank' className='underline text-blue-700 hover:text-blue-800 cursor-pointer'>Visit Link</a></>,
             techStack: 'Tehnologies : React JS | Tailwind CSS'
         },
         {
