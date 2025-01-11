@@ -42,7 +42,7 @@ const Projects = () => {
             img: LogitechG,
             name: '5. Logitech-G Clone',
             github: <><FaGithub /> <a href="https://github.com/BryanHoda11/Logitech-G-Website" target='_blank' className='underline flex items-center gap-2 text-blue-700 hover:text-blue-800 cursor-pointer'>GitHub Link</a></>,
-            link: <><a href="https://one-plus-redesign.vercel.app/" target='_blank' className='underline text-blue-700 hover:text-blue-800 cursor-pointer'>Visit Link</a></>,
+            link: <><a href="https://logitechg-website.vercel.app/" target='_blank' className='underline text-blue-700 hover:text-blue-800 cursor-pointer'>Visit Link</a></>,
             techStack: 'Tehnologies : Next.js | Tailwind CSS'
         },
         {
