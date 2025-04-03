@@ -11,13 +11,12 @@ const Experience = () => {
                     <div className="internship flex flex-col bg-white sm:flex-row gap-3 mx-auto items-center h-auto min-w-[200px] rounded-lg shadow-md shadow-blue-300 w-fit px-3 py-5">
                         <img className='w-[150px] h-[150px]' src={Experience1} alt="experience-1" />
 
-                        <div className="info flex flex-col sm:px-4 gap-2 sm:border-l sm:border-blue-500 ">
-                            <h2 className='text-blue-500 text-xl pb-3 max-sm:pt-3 font-semibold'>Internship</h2>
+                        <div className="info flex flex-col sm:px-5 gap-2 sm:border-l sm:border-blue-500 ">
+                            <h2 className='text-blue-500 text-xl pb-3 max-sm:pt-3 font-semibold'>Tellis Technologies Pvt. Ltd.</h2>
                             <ul className='flex flex-col gap-2 max-sm:text-sm'>
-                                <li>Company : Tellis Technologies Pvt. Ltd.</li>
                                 <li>Role : Frontend Developer</li>
-                                <li>Period : Nov 2024 - Present</li>
-                                <li>Type of Work : Work From Home (Remote)</li>
+                                <li>Period : Nov 2024 - Jan 2025</li>
+                                <li>Type : Internship | WFH</li>
                             </ul>
                         </div>
                     </div>

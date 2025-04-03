@@ -64,7 +64,7 @@ const Projects = () => {
             <div className="projects my-10">
                 <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center md:text-start'>MY PROJECTS</h2>
 
-                <div className="projects-container max-md:px-4 flex flex-col items-center md:grid md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-10 w-full md:w-[85%] mx-auto">
+                <div className="projects-container max-md:px-4 flex flex-col items-center md:grid md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-10 w-full md:w-[95%] mx-auto">
 
                     {Projects.map((p) => (
                         <div key={p.name} className='project h-auto max-sm:w-fit min-w-[300px] bg-white rounded-lg shadow-md shadow-blue-300 my-5'>
@@ -82,7 +82,7 @@ const Projects = () => {
                     ))}
 
                 </div>
-                <p className='text-blue-700 font-semibold text-center text-sm sm:text-lg py-7'>Note : These are my best 6 projects, to explore others kindly go to my GitHub.</p>
+                <p className='text-blue-700 font-semibold text-center text-sm sm:text-lg py-7'>These are my best projects yet, to explore others kindly go to my GitHub.</p>
 
             </div >
         </>

@@ -10,6 +10,7 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiAdobeillustrator } from "react-icons/si";
+import { RiOpenaiFill } from "react-icons/ri";
 
 const Skills = () => {
     const TechSkills = [
@@ -49,6 +50,10 @@ const Skills = () => {
           icon: <SiAdobeillustrator className='text-amber-900' style={{ fontSize: '80px' }} />,
           name: 'Adobe Illustrator (Ai)'
         },
+        {
+          icon: <RiOpenaiFill className='text-black' style={{ fontSize: '80px' }} />,
+          name: 'Chat GPT'
+        },
     
       ]
       
@@ -60,7 +65,7 @@ const Skills = () => {
         <div className="skills-container flex mx-auto items-center gap-4 py-5 w-[95%]">
           <Marquee autoFill speed={100}>
             {TechSkills.map((T) => (
-              <div key={T.name} className="card cursor-pointer h-auto min-w-[350px] px-5 py-5 my-6 mx-4 flex flex-col items-center justify-center rounded-lg bg-white shadow-md shadow-blue-300">
+              <div key={T.name} className="card cursor-pointer h-auto min-w-[300px] px-5 py-5 my-6 mx-4 flex flex-col items-center justify-center rounded-lg bg-white shadow-md shadow-blue-300">
                 <div className='py-5 hover:scale-110 transition-all duration-300 ease-in'>{T.icon}</div>
                 <h3 className='text-sm'>{T.name}</h3>
               </div>
