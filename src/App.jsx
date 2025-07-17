@@ -41,7 +41,7 @@ function App() {
           </span>
           </h1>
           <h2 className='text-xs sm:text-lg md:text-xl text-center lg:text-start max-sm:px-2'>Over here, you will know about my Education, Skills & work done.</h2>
-          <button className='bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg text-sm md:text-lg px-5 py-2 my-3 cursor-pointer hover:from-blue-600 hover:to-blue-500 transition-all duration-200 w-fit'><a className='text-white font-bold' href="https://documentcloud.adobe.com/gsuiteintegration/index.html?state=%7B%22ids%22%3A%5B%221bpn8FjFyhoCRB5FzKjlhMaBcPpqIofXq%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22109536557876944904708%22%2C%22resourceKeys%22%3A%7B%7D%7D" target='_blank'>MY RESUME</a></button>
+          <button className='bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg text-sm md:text-lg px-5 py-2 my-3 cursor-pointer hover:from-blue-600 hover:to-blue-500 transition-all duration-200 w-fit'><a className='text-white font-bold' href="https://drive.google.com/file/d/1pqDpvyk-UuHDvClCqk9hAnfuyD6srI-r/view?usp=sharing" target='_blank'>MY RESUME</a></button>
         </div>
         <img className='h-96 w-full sm:w-96 lg:h-[40%] lg:w-[40%] lg:rounded-full py-5 lg:py-0' src={MyPicture} alt="MyPicture" />
       </div>

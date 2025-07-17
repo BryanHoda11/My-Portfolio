@@ -15,7 +15,7 @@ const Experience = () => {
                             <ul className='flex flex-col gap-2 max-sm:text-sm'>
                                 <li>Role : Frontend Developer</li>
                                 <li>Period : Nov 2024 - Jan 2025</li>
-                                <li>Type : Internship | WFH</li>
+                                <li>Type : Internship | Remote</li>
                             </ul>
                         </div>
                     </div>
