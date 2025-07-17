@@ -63,7 +63,7 @@ const Skills = () => {
         <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center md:text-start'>MY SKILLS</h2>
 
         <div className="skills-container flex mx-auto items-center gap-4 py-5 w-[95%]">
-          <Marquee autoFill speed={100}>
+          <Marquee autoFill speed={100} drag={true} gradient={false}>
             {TechSkills.map((T) => (
               <div key={T.name} className="card cursor-pointer h-auto min-w-[300px] px-5 py-5 my-6 mx-4 flex flex-col items-center justify-center rounded-lg bg-white shadow-md shadow-blue-300">
                 <div className='py-5 hover:scale-110 transition-all duration-300 ease-in'>{T.icon}</div>

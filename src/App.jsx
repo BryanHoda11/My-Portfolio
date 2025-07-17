@@ -1,4 +1,5 @@
 import './App.css'
+import { useState } from 'react';
 // Imported Images & Components
 import Navbar from './components/Navbar'
 import MyPicture from '/images/MyPicture.png';
@@ -8,11 +9,16 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import SW from './components/s-w';
 import Education from './components/Education';
+import { IoSchool } from "react-icons/io5";
+import { MdWork } from "react-icons/md";
+import { FaGears } from "react-icons/fa6";
 
 // React Libraries & Icons 
 import { TypeAnimation } from 'react-type-animation';
 
 function App() {
+  const [activeSection, setActiveSection] = useState("education");
+
   return (
     <>
       <Navbar />
@@ -40,7 +46,7 @@ function App() {
         <img className='h-96 w-full sm:w-96 lg:h-[40%] lg:w-[40%] lg:rounded-full py-5 lg:py-0' src={MyPicture} alt="MyPicture" />
       </div>
 
-      <Education />
+      {/* <Education /> */}
 
       <div className="my-views">
         <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center md:text-start'>HOW & WHY THIS FIELD ?</h2>
@@ -53,9 +59,44 @@ function App() {
         </div>
       </div>
 
+      <div className="switch-container my-10">
+        <div className="switches flex items-center justify-around mx-auto pb-5">
+          <div onClick={() => setActiveSection("education")} className={`education ${activeSection === "education" ? "text-blue-600" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
+            <IoSchool size={30} />
+            <span className='max-sm:hidden'>Education</span>
+          </div>
+
+          <div onClick={() => setActiveSection("experience")} className={`experience ${activeSection === "experience" ? "text-blue-600" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
+            <MdWork size={30} />
+            <span className='max-sm:hidden'>Experience</span>
+          </div>
+          <div onClick={() => setActiveSection("projects")} className={`projects ${activeSection === "projects" ? "text-blue-600" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
+            <FaGears size={30} />
+            <span className='max-sm:hidden'>Projects</span>
+          </div>
+        </div>
+
+        <div className="content pt-5">
+          {
+            (() => {
+              switch (activeSection) {
+                case "education":
+                  return <Education />;
+                case "experience":
+                  return <Experience />;
+                case "projects":
+                  return <Projects />;
+                default:
+                  return null;
+              }
+            })()
+          }
+        </div>
+      </div>
+
       <Skills />
-      <Experience />
-      <Projects />
+      {/* <Experience /> */}
+      {/* <Projects /> */}
       <SW />
       <Footer />
     </>

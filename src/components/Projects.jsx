@@ -61,8 +61,7 @@ const Projects = () => {
     ]
     return (
         <>
-            <div className="projects my-10">
-                <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center md:text-start'>MY PROJECTS</h2>
+            <div className="projects">
 
                 <div className="projects-container max-md:px-4 flex flex-col items-center md:grid md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-10 w-full md:w-[95%] mx-auto">
 
