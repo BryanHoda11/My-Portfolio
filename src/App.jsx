@@ -46,8 +46,6 @@ function App() {
         <img className='h-96 w-full sm:w-96 lg:h-[40%] lg:w-[40%] lg:rounded-full py-5 lg:py-0' src={MyPicture} alt="MyPicture" />
       </div>
 
-      {/* <Education /> */}
-
       <div className="my-views">
         <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center md:text-start'>HOW & WHY THIS FIELD ?</h2>
         <div className="views-container flex flex-col items-center lg:items-baseline lg:flex-row gap-4 px-3 lg:px-10 py-6">
@@ -95,8 +93,6 @@ function App() {
       </div>
 
       <Skills />
-      {/* <Experience /> */}
-      {/* <Projects /> */}
       <SW />
       <Footer />
     </>

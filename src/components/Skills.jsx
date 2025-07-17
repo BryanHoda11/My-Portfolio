@@ -62,7 +62,7 @@ const Skills = () => {
           <Marquee autoFill speed={100}>
             {TechSkills.map((T) => (
               <div key={T.name} className="card cursor-pointer h-auto min-w-[300px] px-5 py-5 my-6 mx-4 flex flex-col items-center justify-center rounded-lg bg-white shadow-md shadow-blue-300">
-                <div className='py-5 hover:scale-110 transition-all duration-300 ease-in'>{T.icon}</div>
+                <div className='py-5 transition-all duration-300 ease-in'>{T.icon}</div>
                 <h3 className='text-sm'>{T.name}</h3>
               </div>
             ))}
