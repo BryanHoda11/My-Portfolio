@@ -23,7 +23,7 @@ function App() {
     <>
       <Navbar />
 
-      <div className="intro-container flex flex-col lg:flex-row mt-12 lg:mt-0 justify-center lg:justify-around items-center lg:min-h-[700px] w-full">
+      <div className="intro-container flex flex-col lg:flex-row my-7 justify-center lg:justify-around items-center lg:min-h-[700px] w-full">
         <div className="info flex flex-col items-center lg:items-start gap-3 w-full lg:w-1/2 px-0 sm:px-6">
           <h4 className='text-blue-600 text-md xl:text-lg'>WELCOME TO MY PORTFOLIO</h4>
           <h1 className='text-center text-lg sm:text-2xl xl:text-3xl'>I am a <span className='intro-span'>
@@ -46,9 +46,9 @@ function App() {
         <img className='h-96 w-full sm:w-96 lg:h-[40%] lg:w-[40%] lg:rounded-full py-5 lg:py-0' src={MyPicture} alt="MyPicture" />
       </div>
 
-      <div className="my-views">
+      <div className="my-views my-10">
         <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center md:text-start'>HOW & WHY THIS FIELD ?</h2>
-        <div className="views-container flex flex-col items-center lg:items-baseline lg:flex-row gap-4 px-3 lg:px-10 py-6">
+        <div className="views-container flex flex-col items-center lg:items-baseline lg:flex-row gap-4 px-3 lg:px-10">
           <div className="box relative rounded-lg bg-white shadow-lg shadow-blue-300 mx-auto h-auto w-full sm:w-[95%] lg:w-[70%] text-whi px-4 py-4">
             <p className='text-sm lg:text-lg py-3 w-[90%] sm:w-[60%]'>Coming from Commerce background I developed interest in IT. First I got introduced to it as a subject but later on, when I started learning about IT deeply in my degree and explored career options, my interest grew in it. Therefore, I decided to choose IT as my career specializing in <span className='font-bold'>Frontend Web Development.</span></p>
 
