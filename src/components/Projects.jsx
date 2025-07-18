@@ -81,7 +81,7 @@ const Projects = () => {
                     ))}
 
                 </div>
-                <p className='text-blue-700 font-semibold text-center text-sm sm:text-lg py-7'>These are my best projects yet, to explore others kindly go to my GitHub.</p>
+                <p className='text-blue-700 font-semibold text-center text-sm sm:text-lg py-3 px-3'>These are my best projects yet, to explore others kindly go to my GitHub.</p>
 
             </div >
         </>

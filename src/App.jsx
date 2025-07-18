@@ -23,7 +23,7 @@ function App() {
     <>
       <Navbar />
 
-      <div className="intro-container flex flex-col lg:flex-row justify-center lg:justify-around items-center lg:min-h-[700px] w-full">
+      <div className="intro-container flex flex-col lg:flex-row max-lg:mt-7 justify-center lg:justify-around items-center lg:min-h-[700px] w-full">
         <div className="info flex flex-col items-center lg:items-start gap-3 w-full lg:w-1/2 px-0 sm:px-6">
           <h4 className='text-blue-600 text-md xl:text-lg'>WELCOME TO MY PORTFOLIO</h4>
           <h1 className='text-center text-lg sm:text-2xl xl:text-3xl'>I am a <span className='intro-span'>
