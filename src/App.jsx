@@ -59,18 +59,19 @@ function App() {
 
       <div className="switch-container my-10">
         <div className="switches flex items-center justify-around mx-auto pb-5">
-          <div onClick={() => setActiveSection("education")} className={`education ${activeSection === "education" ? "text-blue-600" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
+          <div onClick={() => setActiveSection("education")} className={`education ${activeSection === "education" ? "text-blue-600 scale-110 transition-all duration-300" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
             <IoSchool size={30} />
-            <span className='max-sm:hidden'>Education</span>
+            <span className='max-sm:text-xs text-center'>Education</span>
           </div>
 
-          <div onClick={() => setActiveSection("experience")} className={`experience ${activeSection === "experience" ? "text-blue-600" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
+          <div onClick={() => setActiveSection("experience")} className={`experience ${activeSection === "experience" ? "text-blue-600 scale-110 transition-all duration-300" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
             <MdWork size={30} />
-            <span className='max-sm:hidden'>Experience</span>
+            <span className='max-sm:text-xs text-center'>Experience</span>
           </div>
-          <div onClick={() => setActiveSection("projects")} className={`projects ${activeSection === "projects" ? "text-blue-600" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
+
+          <div onClick={() => setActiveSection("projects")} className={`projects ${activeSection === "projects" ? "text-blue-600 scale-110 transition-all duration-300" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
             <FaGears size={30} />
-            <span className='max-sm:hidden'>Projects</span>
+            <span className='max-sm:text-xs text-center'>Projects</span>
           </div>
         </div>
 
