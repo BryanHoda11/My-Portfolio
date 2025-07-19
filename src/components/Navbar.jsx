@@ -26,7 +26,6 @@ const [link, setlink] = useState(false);
                 </div>}
 
                 {link && <div className="res-links flex flex-col justify-center mx-auto gap-6 absolute bg-white my-5 z-10 px-4 py-4 w-full sm:w-1/2 top-12 right-0">
-                  <span className='cursor-default text-center text-blue-500'>Connect with me : </span>
                   <ul className='flex flex-col justify-center items-center gap-3 '>
                     <li className='cursor-pointer text-gray-600 hover:text-blue-500 transition-all duration-500'><a href='https://github.com/BryanHoda11' target='_blank' rel='noopener noreferrer' className='cursor-pointer flex items-center gap-3'>GitHub<FaGithub style={{fontSize: '20px'}}/></a></li>
                     <li className='cursor-pointer text-gray-600 hover:text-blue-500 transition-all duration-500'><a href='https://www.linkedin.com/in/bryan-hoda-b079452b2/' target='_blank' rel='noopener noreferrer' className='cursor-pointer flex items-center gap-3'>Linked In<FaLinkedin style={{fontSize: '20px'}}/></a></li>
