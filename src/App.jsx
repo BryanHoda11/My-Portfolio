@@ -29,7 +29,7 @@ function App() {
           <h1 className='text-center text-lg sm:text-2xl xl:text-3xl'>I am a <span className='intro-span'>
             <TypeAnimation
               sequence={[
-                'Frontend Web Developer.',
+                'Frontend Developer.',
                 1000,
               ]}
               wrapper="span"
