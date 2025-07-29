@@ -82,7 +82,6 @@ const Projects = () => {
         {
             img: Barbex,
             name: 'Barbex Salon',
-            // github: <><FaGithub /> <a href="https://github.com/BryanHoda11/SuperHeroKiDuniya" target='_blank'>GitHub</a></>,
             link: <><FaExternalLinkAlt /> <a href="https://barbex-hazel.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'A barber & salon website built from scratch with responsive design & optimized it for better performance',
             techStack: 'Tehnologies : Next.js | Tailwind CSS'
@@ -91,7 +90,7 @@ const Projects = () => {
             img: SpaMagic,
             name: 'Spa Magic',
             link: <><FaExternalLinkAlt /> <a href="https://spa-azure-psi.vercel.app/" target='_blank'>Visit Link</a></>,
-            about: 'A spa & grooming website optimized & improved performance for users.',
+            about: 'A spa & grooming website converted from HTML to JSX and optimized using Next.js & improved performance for users.',
             techStack: 'Tehnologies : Next.js | Tailwind CSS',
         },
     ]
