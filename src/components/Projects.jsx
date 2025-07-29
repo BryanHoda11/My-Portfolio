@@ -1,6 +1,8 @@
-
+import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
+
+// Personal Projects
 import Spotify from '/images/spotify-project.webp'
 import ToDo from '/images/todo-app-project.webp'
 import OnePlus from '/images/OnePlus-project.webp'
@@ -9,7 +11,13 @@ import SuperheroKiduniya from '/images/superherokiduniya-project.webp'
 import FrontendHub from '/images/Frontend-hub.webp'
 import CryptoDashboard from '/images/crypto-project.webp'
 
+// Professional Projects
+import Barbex from '/images/Barbex.webp'
+import SpaMagic from '/images/SpaMagic.webp'
+
 const Projects = () => {
+    const [personal, setPersonal] = useState(true);
+
     const Projects = [
         {
             img: Spotify,
@@ -69,21 +77,55 @@ const Projects = () => {
             new: <><button className="h-auto w-fit text-xs cursor-default px-4 py-2 rounded-xl text-center bg-green-500 font-semibold text-white">New!</button></>
         },
     ]
+
+    const Professional = [
+        {
+            img: Barbex,
+            name: 'Barbex Salon',
+            // github: <><FaGithub /> <a href="https://github.com/BryanHoda11/SuperHeroKiDuniya" target='_blank'>GitHub</a></>,
+            link: <><FaExternalLinkAlt /> <a href="https://barbex-hazel.vercel.app/" target='_blank'>Visit Link</a></>,
+            about: 'A barber & salon website built from scratch with responsive design & optimized it for better performance',
+            techStack: 'Tehnologies : Next.js | Tailwind CSS'
+        },
+        {
+            img: SpaMagic,
+            name: 'Spa Magic',
+            link: <><FaExternalLinkAlt /> <a href="https://spa-azure-psi.vercel.app/" target='_blank'>Visit Link</a></>,
+            about: 'A spa & grooming website optimized & improved performance for users.',
+            techStack: 'Tehnologies : Next.js | Tailwind CSS',
+        },
+    ]
     return (
         <>
             <div className="projects">
 
+                <div className="switch flex items-center gap-7 justify-center py-7 mx-auto">
+                    <button onClick={() => setPersonal(true)} className={`max-sm:text-sm px-4 py-2 rounded-full transition-all duration-300 ${personal ? 'bg-blue-700 text-white' : 'bg-gray-100 text-black'}`}>
+                        Personal
+                    </button>
+                    <button onClick={() => setPersonal(false)} className={`max-sm:text-sm px-4 py-2 rounded-full transition-all duration-300 ${!personal ? 'bg-blue-700 text-white' : 'bg-gray-100 text-black'}`}>
+                        Professional
+                    </button>
+                </div>
+
                 <div className="projects-container max-md:px-4 flex flex-col items-center md:grid md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-10 w-full md:w-[95%] mx-auto">
 
-                    {Projects.map((p) => (
+                    {(personal ? Projects : Professional).map((p) => (
                         <div key={p.name} className='project h-auto max-sm:w-fit min-w-[300px] bg-white rounded-lg shadow-md shadow-blue-300 my-5 relative'>
                             <img src={p.img} alt="project" />
                             <div className="details px-4 py-4 flex flex-col justify-center ga">
                                 <h2 className='md:text-xl font-bold'>{p.name}</h2>
                                 <p className='opacity-60 max-md:text-sm py-2'><span className='font-semibold opacity-100 text-black'>About :</span> {p.about}</p>
                                 <div className="links flex items-center gap-4 py-3">
-                                    <button className='flex max-sm:text-sm items-center gap-2 text-white font-semibold bg-blue-700 px-4 py-2 rounded-full hover:bg-blue-800 transition-all duration-300'>{p.github} </button>
-                                    <button className='flex max-sm:text-sm items-center gap-2 text-white font-semibold bg-blue-700 px-4 py-2 rounded-full hover:bg-blue-800 transition-all duration-300 border-l-[0.7px] border-blue-500 pl-4'>{p.link}</button>
+                                    <button className={`group relative ${personal ? 'block' : 'hidden'} text-sm text-white font-semibold bg-blue-700 px-4 py-2 rounded-full transition-all duration-300`}>
+                                        <span className="relative z-10 flex text-sm items-center gap-2 group-hover:text-blue-700 transition-all duration-300">{p.github}</span>
+                                        <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out rounded-full z-0"></span>
+                                    </button>
+
+                                    <button className="group relative text-sm text-white font-semibold bg-blue-700 px-4 py-2 rounded-full transition-all duration-300">
+                                        <span className="relative z-10 flex text-sm items-center gap-2 group-hover:text-blue-700 transition-all duration-300">{p.link}</span>
+                                        <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out rounded-full z-0"></span>
+                                    </button>
                                 </div>
                                 <p className='text-blue-800 text-xs sm:text-sm opacity-60'>{p.techStack}</p>
 
@@ -93,7 +135,7 @@ const Projects = () => {
                     ))}
 
                 </div>
-                <p className='text-blue-700 font-semibold text-center text-sm sm:text-lg py-3 px-3'>These are my best projects yet, to explore others kindly go to my GitHub.</p>
+                <p className={`text-blue-700 ${personal ? 'block' : 'hidden'} font-semibold text-center text-sm sm:text-lg py-3 px-3`}>These are my best projects yet, to explore others kindly go to my GitHub.</p>
 
             </div >
         </>
