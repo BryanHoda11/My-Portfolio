@@ -13,7 +13,7 @@ const [link, setlink] = useState(false);
         <>
             <nav className='sticky top-0 w-full bg-white z-50'>
               <div className='flex items-center justify-between md:px-5 py-4 shadow-md shadow-blue-200'>
-                <div className="logo cursor-default text-blue-500 font-bold logo-font text-lg sm:text-xl flex flex-col md:flex-row items-center">Hi, This is Bryan <span className='flex items-center text-xs sm:text-sm gap-2 text-gray-800 opacity-80 px-6 pt-1 md:pt-0'><IoLocationSharp style={{fontSize: '18px'}}/> Mumbai , Maharashtra</span></div> 
+                <div className="logo cursor-default text-blue-500 font-bold logo-font text-lg sm:text-xl flex flex-col md:flex-row items-center">Hi, This is Bryan <span className='flex items-center text-xs sm:text-sm gap-2 text-gray-800 opacity-80 px-6 pt-1 md:pt-0'><IoLocationSharp style={{fontSize: '18px'}}/> Mumbai , Maharashtra - India</span></div> 
 
                 <div className='links hidden lg:flex items-center gap-10'>
                   <a href='https://github.com/BryanHoda11' target='_blank' rel='noopener noreferrer' className='cursor-pointer text-gray-600 hover:text-blue-500 transition-all duration-500'><FaGithub style={{fontSize: '20px'}}/></a>
