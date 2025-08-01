@@ -11,7 +11,7 @@ const Experience = () => {
                         <img className='w-[150px] h-[150px]' src={Experience1} alt="experience-1" />
 
                         <div className="info flex flex-col sm:px-5 gap-2 sm:border-l sm:border-blue-500 ">
-                            <h2 className='text-blue-500 text-xl pb-3 max-sm:pt-3 font-semibold'>Tellis Technologies Pvt. Ltd.</h2>
+                            <h2 className='text-blue-500 text-lg sm:text-xl pb-3 max-sm:pt-3 font-semibold'>Tellis Technologies Pvt. Ltd.</h2>
                             <ul className='flex flex-col gap-2 max-sm:text-sm'>
                                 <li>Role : Frontend Developer</li>
                                 <li>Period : Nov 2024 - Jan 2025</li>
