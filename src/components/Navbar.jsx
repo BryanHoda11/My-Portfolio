@@ -11,7 +11,7 @@ const [link, setlink] = useState(false);
 
     return (
         <>
-            <nav id="navbar" className='sticky top-0 w-full bg-white z-50 shadow-md shadow-blue-200'>
+            <nav id='navbar' className='sticky top-0 w-full bg-white z-50 shadow-blue-200'>
               <div className='flex items-center justify-between md:px-5 py-4 px-3'>
                 <div className="logo cursor-default text-blue-500 font-bold logo-font text-lg sm:text-xl flex flex-col md:flex-row md:items-center">Hi, This is Bryan <span className='flex items-center text-xs sm:text-sm text-gray-800 opacity-70 md:px-6'><IoLocationSharp style={{fontSize: '18px'}}/> Mumbai , Maharashtra - India</span></div> 
 
