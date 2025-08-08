@@ -22,12 +22,21 @@ function App() {
       <Hero />
 
       <div className="my-views my-10">
-        <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center'>HOW & WHY THIS FIELD ?</h2>
-        <div className="views-container flex flex-col items-center lg:items-baseline lg:flex-row gap-4 px-3 lg:px-10 py-5">
-          <div className="box relative rounded-lg bg-white shadow-lg shadow-blue-300 mx-auto h-auto w-full sm:w-[95%] lg:w-[70%] text-whi px-4 py-4">
-            <p className='text-sm lg:text-lg py-3 w-[90%] sm:w-[60%]'>Coming from Commerce background I developed interest in IT. First I got introduced to it as a subject but later on, when I started learning about IT deeply in my degree and explored career options, my interest grew in it. Therefore, I decided to choose IT as my career specializing in <span className='font-semibold text-blue-600'>Frontend Web Development.</span></p>
+        <h2 className="text-blue-600 text-lg sm:text-xl text-center">
+          HOW & WHY THIS FIELD ?
+        </h2>
 
-            <p className='text-sm lg:text-lg py-3 w-[90%] sm:w-[60%] sm:ml-auto'><span className='font-semibold text-blue-600'>I love to learn and develop new skills</span>. These skills help me explore new options and learn more which inturn may help the company I work in as a whole. Since I believe in exploring new technologies, <span className='font-semibold text-blue-600'>I am open to learning which is vital in this industry</span> and <span className='font-semibold text-blue-600'>I want to help the company and myself to grow and gain more knowledge and experience.</span> Being able to perform as per the desired requirements and making the company proud with my contributions is my main goal.</p>
+        <div className="px-5 flex justify-center mx-auto">
+          <div className="relative bg-white rounded-xl shadow-lg shadow-blue-200 p-6 max-w-5xl">
+
+            <p className="max-sm:text-xs lg:text-lg mb-4">
+              Coming from Commerce background I developed interest in IT. First I got introduced to it as a subject but later on, when I started learning about IT deeply in my degree and explored career options, my interest grew in it. Therefore, I decided to choose IT as my career specializing in <span className="font-semibold text-blue-600">Frontend Web Development.</span>
+            </p>
+
+            <p className="max-sm:text-xs lg:text-lg">
+              <span className="font-semibold text-blue-600">I love to learn and develop new skills</span>. These skills help me explore new options and learn more which inturn may help the company I work in as a whole. Since I believe in exploring new technologies, <span className="font-semibold text-blue-600">I am open to learning which is vital in this industry</span> and <span className="font-semibold text-blue-600">I want to help the company and myself to grow and gain more knowledge and experience.</span> Being able to perform as per the desired requirements and making the company proud with my contributions is my main goal.
+            </p>
+
           </div>
         </div>
       </div>

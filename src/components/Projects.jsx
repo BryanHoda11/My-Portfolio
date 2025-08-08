@@ -74,7 +74,6 @@ const Projects = () => {
             link: <><FaExternalLinkAlt /> <a href="https://crypto-dashboard-wine-one.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'A Crypto Currency Dashboard made to give analytcial graphical data & detailed info on crypto currencies.',
             techStack: 'Tehnologies : React JS | Tailwind CSS | Charts.js',
-            new: <><button className="h-auto w-fit text-xs cursor-default px-4 py-2 rounded-xl text-center bg-green-500 font-semibold text-white">New!</button></>
         },
     ]
 
