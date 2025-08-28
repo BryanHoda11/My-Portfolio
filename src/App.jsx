@@ -41,6 +41,8 @@ function App() {
         </div>
       </div>
 
+      <hr className="border-0 h-[1px] w-[75%] mx-auto my-10 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
+
       <div className="switch-container my-10">
         <div className="switches flex items-center justify-around mx-auto py-5">
           <div onClick={() => setActiveSection("education")} className={`education ${activeSection === "education" ? "text-blue-600 scale-110 transition-all duration-300" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
@@ -78,6 +80,7 @@ function App() {
       </div>
 
       <Skills />
+      <hr className="border-0 h-[1px] w-[75%] mx-auto my-10 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
       <Footer />
     </>
   )

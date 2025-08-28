@@ -1,12 +1,10 @@
-import React from 'react'
 import { FaWhatsapp } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <>
-            <footer className='h-auto bg-white w-[95%] rounded-lg shadow-md shadow-blue-600 mx-auto px-3 sm:px-5 py-5 my-4'>
+            <footer className='h-auto bg-white w-[95%] rounded-lg shadow-[0_3px_0_rgba(59,130,246,0.6)] mx-auto px-3 sm:px-5 py-5 my-4'>
                 <h1 className='text-center text-lg md:text-xl sm:text-2xl text-blue-700'>Thank you for visiting my site!</h1>
                 <p className='text-center text-gray-700 opacity-75 py-5 text-xs sm:text-lg'>I hope after this, you came to know about me and I really appreciate it. Feel free to get in touch!</p>
 

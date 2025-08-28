@@ -58,7 +58,7 @@ const Skills = () => {
       <div className="skills my-10">
         <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center'>TECHNOLOGIES</h2>
 
-        <div className="flex flex-wrap w-[90%] mx-auto max-md:hidden gap-7 justify-center px-6 py-6">
+        <div className="flex flex-wrap w-[90%] mx-auto max-md:hidden gap-7 justify-center px-6 pt-6">
           {TechSkills.map((T) => (
             <div key={T.name} className="card w-fit flex items-center gap-2 px-6 py-4 rounded-lg hover:scale-105 bg-white shadow-md shadow-blue-300 transition-all duration-300">
               <span>{T.icon}</span>
@@ -67,7 +67,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="md:hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 px-4 py-8">
+        <div className="md:hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 px-4 pt-5">
           {TechSkills.map((T) => (
             <div key={T.name} className="card cursor-pointer h-auto px-5 py-6 flex flex-col items-center justify-center rounded-lg hover:scale-105 bg-white shadow-md shadow-blue-300 transition-all duration-300">
               <div className="py-4 text-3xl">{T.icon}</div>

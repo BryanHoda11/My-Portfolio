@@ -4,12 +4,11 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 // Personal Projects
 import Spotify from '/images/spotify-project.webp'
-import ToDo from '/images/todo-app-project.webp'
 import OnePlus from '/images/OnePlus-project.webp'
 import LogitechG from '/images/logitechg-project.webp'
 import SuperheroKiduniya from '/images/superherokiduniya-project.webp'
 import FrontendHub from '/images/Frontend-hub.webp'
-import CryptoDashboard from '/images/crypto-project.webp'
+import Jobpool from '/images/Jobpool.webp'
 
 // Professional Projects
 import Barbex from '/images/Barbex.webp'
@@ -26,14 +25,6 @@ const Projects = () => {
             link: <><FaExternalLinkAlt /> <a href="https://spotify-clone-rho-drab.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'This is a Spotify Music player clone wherein I fetched music and made it play using HTML CSS JS.',
             techStack: 'Tehnologies : HTML | CSS | JS'
-        },
-        {
-            img: ToDo,
-            name: 'ToDo App',
-            github: <><FaGithub /> <a href="https://github.com/BryanHoda11/ToDo-App-React-JS" target='_blank'>GitHub</a></>,
-            link: <><FaExternalLinkAlt /> <a href="https://todo-app-react-js-theta.vercel.app/" target='_blank'>Visit Link</a></>,
-            about: 'A basic Todo list app using React where you can save your todos in Local storage (LS).',
-            techStack: 'Tehnologies : React JS | Tailwind CSS'
         },
         {
             img: OnePlus,
@@ -68,12 +59,12 @@ const Projects = () => {
             techStack: 'Tehnologies : React JS | Tailwind CSS | OMdb API'
         },
         {
-            img: CryptoDashboard,
-            name: 'Crypto Dashboard',
-            github: <><FaGithub /> <a href="https://github.com/BryanHoda11/Crypto-Dashboard" target='_blank'>GitHub</a></>,
-            link: <><FaExternalLinkAlt /> <a href="https://crypto-dashboard-wine-one.vercel.app/" target='_blank'>Visit Link</a></>,
-            about: 'A Crypto Currency Dashboard made to give analytcial graphical data & detailed info on crypto currencies.',
-            techStack: 'Tehnologies : React JS | Tailwind CSS | Charts.js',
+            img: Jobpool,
+            name: 'JobPool',
+            github: <><FaGithub /> <a href="https://github.com/BryanHoda11/JobPool" target='_blank'>GitHub</a></>,
+            link: <><FaExternalLinkAlt /> <a href="https://job-pool.vercel.app/" target='_blank'>Visit Link</a></>,
+            about: 'A job portal wherein I fetched and displayed jobs for your dream career with Clerk for Authentication',
+            techStack: 'Tehnologies : Next.js | Tailwind CSS | Clerk | React Toastify'
         },
     ]
 
@@ -105,7 +96,8 @@ const Projects = () => {
                         Professional
                     </button>
                 </div>
-
+                
+                <p className={`text-blue-700 ${personal ? 'block' : 'hidden'} font-semibold text-center text-sm sm:text-lg py-3 px-3`}>These are my best projects yet, to explore others kindly go to my GitHub.</p>
                 <div className="projects-container max-md:px-4 flex flex-col items-center md:grid md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-10 w-full md:w-[95%] mx-auto">
 
                     {(personal ? Projects : Professional).map((p) => (
@@ -133,7 +125,6 @@ const Projects = () => {
                     ))}
 
                 </div>
-                <p className={`text-blue-700 ${personal ? 'block' : 'hidden'} font-semibold text-center text-sm sm:text-lg py-3 px-3`}>These are my best projects yet, to explore others kindly go to my GitHub.</p>
 
             </div >
         </>
