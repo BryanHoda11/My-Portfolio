@@ -1,6 +1,3 @@
-import React from 'react'
-
-import Marquee from "react-fast-marquee";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
 import { FaJs } from "react-icons/fa";
@@ -9,45 +6,51 @@ import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
-import { SiAdobeillustrator } from "react-icons/si";
+import { SiShadcnui } from "react-icons/si";
 import { RiOpenaiFill } from "react-icons/ri";
 
 const Skills = () => {
   const TechSkills = [
     {
-      icon: <FaHtml5 className='text-orange-500' style={{ fontSize: '80px' }} />,
+      icon: <FaHtml5 className='text-orange-500' size={75} />,
       name: 'HTML'
     },
     {
-      icon: <FaCss3Alt className='text-blue-500' style={{ fontSize: '80px' }} />,
+      icon: <FaCss3Alt className='text-blue-500' size={75} />,
       name: 'CSS'
     },
     {
-      icon: <FaJs className='text-yellow-400' style={{ fontSize: '80px' }} />,
+      icon: <FaJs className='text-yellow-400' size={75} />,
       name: 'JavaScript (JS)'
     },
     {
-      icon: <FaReact className='text-blue-400' style={{ fontSize: '80px' }} />,
+      icon: <FaReact className='text-blue-400' size={75} />,
       name: 'React JS'
     },
     {
-      icon: <SiNextdotjs className='text-black' style={{ fontSize: '80px' }} />,
+      icon: <SiNextdotjs className='text-black' size={75} />,
       name: 'Next.js'
     },
     {
-      icon: <RiTailwindCssFill className='text-blue-600' style={{ fontSize: '80px' }} />,
+      icon: <RiTailwindCssFill className='text-blue-600' size={75} />,
       name: 'Tailwind CSS'
     },
     {
-      icon: <FaBootstrap className='text-purple-600' style={{ fontSize: '80px' }} />,
+      icon: <FaBootstrap className='text-purple-600' size={75} />,
       name: 'Bootstrap'
     },
     {
-      icon: <SiRedux className='text-purple-800' style={{ fontSize: '80px' }} />,
+      icon: <SiRedux className='text-purple-800' size={75} />,
       name: 'React Redux'
     },
     {
-      icon: <RiOpenaiFill className='text-black' style={{ fontSize: '80px' }} />,
+      icon: <div className="bg-black p-4 rounded-lg flex items-center justify-center">
+        <SiShadcnui className="text-white" size={60} />
+      </div>,
+      name: 'Shadcn UI'
+    },
+    {
+      icon: <RiOpenaiFill className='text-black' size={80} />,
       name: 'Chat GPT'
     },
 

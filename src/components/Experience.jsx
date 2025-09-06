@@ -1,4 +1,3 @@
-import React from 'react'
 import Experience1 from '/images/experience-1.webp'
 
 const Experience = () => {
