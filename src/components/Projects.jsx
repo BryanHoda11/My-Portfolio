@@ -89,11 +89,11 @@ const Projects = () => {
             <div className="projects">
 
                 <div className="switch flex items-center gap-7 justify-center py-7 mx-auto">
-                    <button onClick={() => setPersonal(true)} className={`max-sm:text-sm px-4 py-2 transition-all duration-300 ${personal ? 'bg-blue-700 text-white rounded-lg' : 'bg-gray-100 text-black'}`}>
-                        Personal
+                    <button onClick={() => setPersonal(true)} className={`max-sm:text-sm px-4 py-2 rounded-lg transition-all duration-300 ${personal ? 'bg-blue-700 text-white' : 'bg-gray-100 text-black'}`}>
+                        Personal ({Projects.length})
                     </button>
-                    <button onClick={() => setPersonal(false)} className={`max-sm:text-sm px-4 py-2 transition-all duration-300 ${!personal ? 'bg-blue-700 text-white rounded-lg' : 'bg-gray-100 text-black'}`}>
-                        Professional
+                    <button onClick={() => setPersonal(false)} className={`max-sm:text-sm px-4 py-2 rounded-lg transition-all duration-300 ${!personal ? 'bg-blue-700 text-white' : 'bg-gray-100 text-black'}`}>
+                        Professional ({Professional.length})
                     </button>
                 </div>
                 

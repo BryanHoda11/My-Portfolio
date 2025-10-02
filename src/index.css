@@ -32,56 +32,74 @@
 
   /* Style for WebKit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
-  width: 6px; /* Set the scrollbar width */
+  width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Scrollbar track color */
+  background: #f1f1f1; 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: #1E90FF; /* Scrollbar thumb color (blue) */
-  border-radius: 10px; /* Rounded edges */
+  background-color: #1E90FF; 
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #0c7ccf; /* Darker blue on hover */
+  background-color: #0c7ccf;
   cursor: pointer;
 }
 
 .skills-container::-webkit-scrollbar {
-  height: 3px; /* Height for horizontal scrollbar */
+  height: 3px; 
   background: white;
 }
 
 .skills-container::-webkit-scrollbar-thumb {
-  background-color: #1E90FF; /* Blue color */
+  background-color: #1E90FF; 
   border-radius: 10px;
 }
 
 .skills-container::-webkit-scrollbar-thumb:hover {
-  background-color: #0c7ccf; /* Darker blue on hover */
+  background-color: #0c7ccf;
 }
 
 .html-css::-webkit-scrollbar {
-  height: 3px; /* Height for horizontal scrollbar */
+  height: 3px;
   background: white;
 }
 
 .html-css-js::-webkit-scrollbar {
-  height: 3px; /* Height for horizontal scrollbar */
+  height: 3px;
   background: white;
 }
 
 .React-Tailwind::-webkit-scrollbar {
-  height: 3px; /* Height for horizontal scrollbar */
+  height: 3px; 
   background: white;
 }
 
 .Next-Tailwind::-webkit-scrollbar {
-  height: 3px; /* Height for horizontal scrollbar */
+  height: 3px; 
   background: white;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background: linear-gradient(270deg, #3d7add, #4569b7, #0652cc);
+  background-size: 400% 400%;
+  animation: gradient-move 6s ease infinite;
 }
