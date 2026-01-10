@@ -8,49 +8,48 @@ import { SiNextdotjs } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
 import { RiOpenaiFill } from "react-icons/ri";
+import { ImGithub } from "react-icons/im";
 
 const Skills = () => {
   const TechSkills = [
     {
-      icon: <FaHtml5 className='text-orange-500' size={75} />,
+      icon: <FaHtml5 className='text-orange-500' size={60} />,
       name: 'HTML'
     },
     {
-      icon: <FaCss3Alt className='text-blue-500' size={75} />,
+      icon: <FaCss3Alt className='text-blue-500' size={60} />,
       name: 'CSS'
     },
     {
-      icon: <FaJs className='text-yellow-400' size={75} />,
+      icon: <FaJs className='text-yellow-400' size={60} />,
       name: 'JavaScript (JS)'
     },
     {
-      icon: <FaReact className='text-blue-400' size={75} />,
+      icon: <FaReact className='text-blue-400' size={60} />,
       name: 'React JS'
     },
     {
-      icon: <SiNextdotjs className='text-black' size={75} />,
+      icon: <SiNextdotjs className='text-black' size={60} />,
       name: 'Next.js'
     },
     {
-      icon: <RiTailwindCssFill className='text-blue-600' size={75} />,
+      icon: <RiTailwindCssFill className='text-blue-600' size={60} />,
       name: 'Tailwind CSS'
     },
     {
-      icon: <FaBootstrap className='text-purple-600' size={75} />,
+      icon: <FaBootstrap className='text-purple-600' size={60} />,
       name: 'Bootstrap'
     },
     {
-      icon: <SiRedux className='text-purple-800' size={75} />,
+      icon: <SiRedux className='text-purple-800' size={60} />,
       name: 'React Redux'
     },
     {
-      icon: <div className="bg-black p-4 rounded-lg flex items-center justify-center">
-        <SiShadcnui className="text-white" size={60} />
-      </div>,
-      name: 'Shadcn UI'
+      icon: <ImGithub size={60} />,
+      name: 'Git / GitHub'
     },
     {
-      icon: <RiOpenaiFill className='text-black' size={80} />,
+      icon: <RiOpenaiFill className='text-black' size={60} />,
       name: 'Chat GPT'
     },
 

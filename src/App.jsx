@@ -21,28 +21,6 @@ function App() {
       <Navbar />
       <Hero />
 
-      <div className="my-views my-10">
-        <h2 className="text-blue-600 text-lg sm:text-xl text-center">
-          HOW & WHY THIS FIELD ?
-        </h2>
-
-        <div className="px-5 flex justify-center mx-auto">
-          <div className="relative bg-white rounded-xl shadow-lg shadow-blue-200 p-6 max-w-5xl">
-
-            <p className="max-sm:text-xs lg:text-lg mb-4">
-              Coming from Commerce background I developed interest in IT. First I got introduced to it as a subject but later on, when I started learning about IT deeply in my degree and explored career options, my interest grew in it. Therefore, I decided to choose IT as my career specializing in <span className="font-semibold text-blue-600">Frontend Web Development.</span>
-            </p>
-
-            <p className="max-sm:text-xs lg:text-lg">
-              <span className="font-semibold text-blue-600">I love to learn and develop new skills</span>. These skills help me explore new options and learn more which inturn may help the company I work in as a whole. Since I believe in exploring new technologies, <span className="font-semibold text-blue-600">I am open to learning which is vital in this industry</span> and <span className="font-semibold text-blue-600">I want to help the company and myself to grow and gain more knowledge and experience.</span> Being able to perform as per the desired requirements and making the company proud with my contributions is my main goal.
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-      <hr className="border-0 h-[1px] w-[75%] mx-auto my-10 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-
       <div className="switch-container my-10">
         <div className="switches flex items-center justify-around mx-auto py-5">
           <div onClick={() => setActiveSection("education")} className={`education ${activeSection === "education" ? "text-blue-600 scale-110 transition-all duration-300" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
@@ -76,6 +54,26 @@ function App() {
               }
             })()
           }
+        </div>
+      </div>
+
+      <hr className="border-0 h-[1px] w-[75%] mx-auto my-10 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
+
+      <div className="my-views my-10">
+        <h2 className="text-blue-600 text-lg sm:text-xl text-center"> HOW & WHY THIS FIELD ? </h2>
+
+        <div className="px-5 flex justify-center mx-auto">
+          <div className="relative bg-white rounded-xl shadow-lg shadow-blue-200 p-6 max-w-5xl">
+
+            <p className="max-sm:text-xs lg:text-lg mb-4">
+              Coming from Commerce background I developed interest in IT. First I got introduced to it as a subject but later on, when I started learning about IT deeply in my degree and explored career options, my interest grew in it. Therefore, I decided to choose IT as my career specializing in <span className="font-semibold text-blue-600">Frontend Web Development.</span>
+            </p>
+
+            <p className="max-sm:text-xs lg:text-lg">
+              <span className="font-semibold text-blue-600">I love to learn and develop new skills</span>. These skills help me explore new options and learn more which inturn may help the company I work in as a whole. Since I believe in exploring new technologies, <span className="font-semibold text-blue-600">I am open to learning which is vital in this industry</span> and <span className="font-semibold text-blue-600">I want to help the company and myself to grow and gain more knowledge and experience.</span> Being able to perform as per the desired requirements and making the company proud with my contributions is my main goal.
+            </p>
+
+          </div>
         </div>
       </div>
 
