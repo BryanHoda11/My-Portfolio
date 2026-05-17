@@ -14,7 +14,7 @@ import { MdWork } from "react-icons/md";
 import { FaGears } from "react-icons/fa6";
 
 function App() {
-  const [activeSection, setActiveSection] = useState("education");
+  const [activeSection, setActiveSection] = useState("experience");
 
   return (
     <>
@@ -23,19 +23,20 @@ function App() {
 
       <div className="switch-container my-10">
         <div className="switches flex items-center justify-around mx-auto py-5">
-          <div onClick={() => setActiveSection("education")} className={`education ${activeSection === "education" ? "text-blue-600 scale-110 transition-all duration-300" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
-            <IoSchool size={30} />
-            <span className='max-sm:text-xs text-center'>Education</span>
-          </div>
 
           <div onClick={() => setActiveSection("experience")} className={`experience ${activeSection === "experience" ? "text-blue-600 scale-110 transition-all duration-300" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
-            <MdWork size={30} />
+            <MdWork size={23} />
             <span className='max-sm:text-xs text-center'>Experience</span>
           </div>
 
           <div onClick={() => setActiveSection("projects")} className={`projects ${activeSection === "projects" ? "text-blue-600 scale-110 transition-all duration-300" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
-            <FaGears size={30} />
+            <FaGears size={23} />
             <span className='max-sm:text-xs text-center'>Projects</span>
+          </div>
+
+          <div onClick={() => setActiveSection("education")} className={`education ${activeSection === "education" ? "text-blue-600 scale-110 transition-all duration-300" : ""} flex flex-col gap-1 items-center cursor-pointer relative`}>
+            <IoSchool size={23} />
+            <span className='max-sm:text-xs text-center'>Education</span>
           </div>
         </div>
 
@@ -43,12 +44,12 @@ function App() {
           {
             (() => {
               switch (activeSection) {
-                case "education":
-                  return <Education />;
                 case "experience":
                   return <Experience />;
                 case "projects":
                   return <Projects />;
+                case "education":
+                  return <Education />;
                 default:
                   return null;
               }
@@ -78,7 +79,9 @@ function App() {
       </div>
 
       <Skills />
-      <hr className="border-0 h-[1px] w-[75%] mx-auto my-10 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
+
+      <hr className="border-0 h-[1px] w-[75%] mx-auto mt-7 mb-4 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
+
       <Footer />
     </>
   )

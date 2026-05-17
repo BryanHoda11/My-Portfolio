@@ -25,7 +25,7 @@ const Experience = () => {
                     <div key={ex.company} className={`relative flex my-8 max-md:justify-center ${index % 2 === 0 ? "justify-start" : "justify-end"}`}>
                         <div className="exp-card flex flex-col bg-white sm:flex-row gap-3 items-start sm:items-center h-auto max-sm:w-full min-w-[200px] rounded-lg shadow-md shadow-blue-300 px-3 py-5">
                             <img className="w-[100px] h-auto object-contain mx-auto" src={ex.img} alt="experience" />
-                            <div className="flex flex-col gap-2 sm:border-l border-blue-500 pl-3">
+                            <div className="flex flex-col gap-2 sm:border-l border-blue-500 pl-6">
                                 <h2 className="text-blue-500 text-lg font-semibold">{ex.company}</h2>
                                 <ul className="flex flex-col gap-1 text-sm">
                                     <li>Role : Frontend Developer</li>

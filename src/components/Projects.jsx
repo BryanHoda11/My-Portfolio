@@ -21,6 +21,7 @@ const Projects = () => {
         {
             img: Spotify,
             name: 'Spotify Music Player Clone',
+            date: 'FEB 2024',
             github: <><FaGithub /> <a href="https://github.com/BryanHoda11/Spotify-Clone" target='_blank'>GitHub</a></>,
             link: <><FaExternalLinkAlt /> <a href="https://spotify-clone-rho-drab.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'This is a Spotify Music player clone wherein I fetched music and made it play using HTML CSS JS.',
@@ -29,6 +30,7 @@ const Projects = () => {
         {
             img: OnePlus,
             name: 'OnePlus Redesign',
+            date: 'JULY 2024',
             github: <><FaGithub /> <a href="https://github.com/BryanHoda11/OnePlus-Redesign-Version" target='_blank'>GitHub</a></>,
             link: <><FaExternalLinkAlt /> <a href="https://one-plus-redesign.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'I redesigned the One Plus website UI with minor changes & also added Dark Theme feature. (my biggest project)',
@@ -37,6 +39,7 @@ const Projects = () => {
         {
             img: FrontendHub,
             name: 'Frontend Hub',
+            date: 'AUG 2024',
             github: <><FaGithub /> <a href="https://github.com/BryanHoda11/Frontend-Hub" target='_blank'>GitHub</a></>,
             link: <><FaExternalLinkAlt /> <a href="https://frontend-hub-alpha.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'Created a learning website hub based on frontend development technologies using Next.js. ',
@@ -45,6 +48,7 @@ const Projects = () => {
         {
             img: LogitechG,
             name: 'Logitech-G Clone',
+            date: 'SEPT 2024',
             github: <><FaGithub /> <a href="https://github.com/BryanHoda11/Logitech-G-Website" target='_blank'>GitHub</a></>,
             link: <><FaExternalLinkAlt /> <a href="https://logitechg-website.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'Cloned the webiste of Logitech to enhance my skills and get more comfortable in Next.js.',
@@ -53,6 +57,7 @@ const Projects = () => {
         {
             img: SuperheroKiduniya,
             name: 'SuperHeroKiDuniya',
+            date: 'OCT 2024',
             github: <><FaGithub /> <a href="https://github.com/BryanHoda11/SuperHeroKiDuniya" target='_blank'>GitHub</a></>,
             link: <><FaExternalLinkAlt /> <a href="https://superhero-ki-duniya.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'Created my own Superhero website where you can browse superhero movies which I fetched from an API.',
@@ -61,6 +66,7 @@ const Projects = () => {
         {
             img: Jobpool,
             name: 'JobPool',
+            date: 'AUG 2024',
             github: <><FaGithub /> <a href="https://github.com/BryanHoda11/JobPool" target='_blank'>GitHub</a></>,
             link: <><FaExternalLinkAlt /> <a href="https://job-pool.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'A job portal wherein I fetched and displayed jobs for your dream career with Clerk for Authentication',
@@ -72,6 +78,7 @@ const Projects = () => {
         {
             img: Barbex,
             name: 'Barbex Salon',
+            date: 'DEC 2024',
             link: <><FaExternalLinkAlt /> <a href="https://barbex-hazel.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'A barber & salon website built from scratch with responsive design & optimized it for better performance',
             techStack: 'Tehnologies : Next.js | Tailwind CSS'
@@ -79,6 +86,7 @@ const Projects = () => {
         {
             img: SpaMagic,
             name: 'Spa Magic',
+            date: 'JAN 2025',
             link: <><FaExternalLinkAlt /> <a href="https://spa-azure-psi.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'A spa & grooming website converted from HTML to JSX and optimized using Next.js & improved performance for users.',
             techStack: 'Tehnologies : Next.js | Tailwind CSS',
@@ -103,8 +111,12 @@ const Projects = () => {
                     {(personal ? Projects : Professional).map((p) => (
                         <div key={p.name} className='project h-auto max-sm:w-fit min-w-[300px] bg-white rounded-lg shadow-md shadow-blue-300 my-5 relative'>
                             <img src={p.img} alt="project" />
-                            <div className="details px-4 py-4 flex flex-col justify-center ga">
-                                <h2 className='md:text-xl font-bold'>{p.name}</h2>
+                            <div className="details px-4 py-4 flex flex-col justify-center">
+                                <div className="header flex items-center w-full justify-between">
+                                    <h2 className='md:text-xl font-bold max-sm:w-[65%]'>{p.name}</h2>
+
+                                    <span className="text-xs border border-blue-700 font-semibold text-blue-700 rounded-full bg-white cursor-default w-fit px-3 py-1">{p.date}</span>
+                                </div>
                                 <p className='opacity-60 max-md:text-sm py-2'><span className='font-semibold opacity-100 text-black'>About :</span> {p.about}</p>
                                 <div className="links flex items-center gap-4 py-3">
                                     <button className={`group relative ${personal ? 'block' : 'hidden'} text-sm text-white font-semibold bg-blue-700 px-4 py-2 rounded-full transition-all duration-300`}>
