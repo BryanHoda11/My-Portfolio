@@ -39,10 +39,6 @@ const Hero = () => {
                   sequence={[
                     "Frontend Developer.",
                     1500,
-                    "React Developer.",
-                    1500,
-                    "UI Enthusiast.",
-                    1500,
                   ]}
                   wrapper="span" speed={50} repeat={Infinity} className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-blue-600 to-blue-800" />
               </span>

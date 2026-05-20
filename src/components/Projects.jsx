@@ -66,7 +66,7 @@ const Projects = () => {
         {
             img: Jobpool,
             name: 'JobPool',
-            date: 'AUG 2024',
+            date: 'AUG 2025',
             github: <><FaGithub /> <a href="https://github.com/BryanHoda11/JobPool" target='_blank'>GitHub</a></>,
             link: <><FaExternalLinkAlt /> <a href="https://job-pool.vercel.app/" target='_blank'>Visit Link</a></>,
             about: 'A job portal wherein I fetched and displayed jobs for your dream career with Clerk for Authentication',
@@ -96,11 +96,11 @@ const Projects = () => {
         <>
             <div className="projects">
 
-                <div className="switch flex items-center gap-7 justify-center py-7 mx-auto">
-                    <button onClick={() => setPersonal(true)} className={`max-sm:text-sm px-4 py-2 rounded-lg transition-all duration-300 ${personal ? 'bg-blue-700 text-white' : 'bg-gray-100 text-black'}`}>
+                <div className="switch flex items-center gap-7 justify-center pb-7 mx-auto">
+                    <button onClick={() => setPersonal(true)} className={`max-sm:text-sm px-4 py-2 rounded-lg transition-all duration-300 ${personal ? 'bg-blue-700 text-white font-semibold' : 'bg-gray-100 text-black'}`}>
                         Personal ({Projects.length})
                     </button>
-                    <button onClick={() => setPersonal(false)} className={`max-sm:text-sm px-4 py-2 rounded-lg transition-all duration-300 ${!personal ? 'bg-blue-700 text-white' : 'bg-gray-100 text-black'}`}>
+                    <button onClick={() => setPersonal(false)} className={`max-sm:text-sm px-4 py-2 rounded-lg transition-all duration-300 ${!personal ? 'bg-blue-700 text-white font-semibold' : 'bg-gray-100 text-black'}`}>
                         Professional ({Professional.length})
                     </button>
                 </div>
