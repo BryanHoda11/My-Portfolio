@@ -46,11 +46,11 @@ const Hero = () => {
           </div>
 
           <p className="text-center lg:text-left text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed max-w-xl">
-            Passionate about creating modern, responsive and interactive web experiences. Explore my education, technical skills and projects.
+            Passionate about creating modern, responsive and interactive web experiences & UI. Explore my Education, Technical skills and Projects.
           </p>
 
-          <a href="https://drive.google.com/file/d/1CLeIGo43_LvK3u_OSYjZBo8oEEiGOKFd/view?usp=sharing" target="_blank" className="group">
-            <button className="resume-btn relative overflow-hidden rounded-xl px-6 sm:px-7 py-3 text-sm sm:text-base font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-700 shadow-lg hover:shadow-blue-300/50 hover:scale-105 transition-all duration-300 cursor-pointer">
+          <a href="https://drive.google.com/file/d/1MBE0Jx39ML_pYR_ppKpfKyLF2ZwfyZnE/view?usp=sharing" target="_blank" className="group">
+            <button className="resume-btn relative overflow-hidden rounded-xl px-6 sm:px-7 py-3 text-sm sm:text-base font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-700 shadow-lg hover:shadow-blue-300/50 transition-all duration-300 cursor-pointer">
               <span className="relative z-10">View Resume</span>
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-blue-400 to-blue-600 blur-xl transition-all duration-500"></div>
             </button>

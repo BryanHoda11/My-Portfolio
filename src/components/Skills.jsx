@@ -6,10 +6,13 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
 import { RiOpenaiFill } from "react-icons/ri";
 import { ImGithub } from "react-icons/im";
+import { LuFileJson } from "react-icons/lu";
+import { SiPostman } from "react-icons/si";
 
 const Skills = () => {
   const TechSkills = [
@@ -30,6 +33,10 @@ const Skills = () => {
       name: 'React JS'
     },
     {
+      icon: <FaNodeJs className='text-green-600' size={60} />,
+      name: 'Node.js'
+    },
+    {
       icon: <SiNextdotjs className='text-black' size={60} />,
       name: 'Next.js'
     },
@@ -42,16 +49,20 @@ const Skills = () => {
       name: 'Bootstrap'
     },
     {
-      icon: <SiRedux className='text-purple-800' size={60} />,
-      name: 'React Redux'
-    },
-    {
       icon: <ImGithub size={60} />,
       name: 'Git / GitHub'
     },
     {
+      icon: <SiRedux className='text-purple-800' size={60} />,
+      name: 'React Redux'
+    },
+    {
       icon: <RiOpenaiFill className='text-black' size={60} />,
       name: 'Chat GPT'
+    },
+    {
+      icon: <SiPostman className='text-orange-500' size={60} />,
+      name: 'Postman'
     },
 
   ]
@@ -64,7 +75,7 @@ const Skills = () => {
       <div className="skills my-10">
         <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center'>TECHNOLOGIES</h2>
 
-        <div className="flex flex-wrap w-[90%] mx-auto max-md:hidden gap-7 justify-center px-6 pt-6">
+        <div className="flex flex-wrap w-[90%] mx-auto max-md:hidden gap-7 justify-center pt-4">
           {TechSkills.map((T) => (
             <div key={T.name} className="card w-fit flex items-center gap-2 px-6 py-4 rounded-lg hover:scale-105 bg-white shadow-md shadow-blue-300 transition-all duration-300">
               <span>{T.icon}</span>
@@ -75,7 +86,7 @@ const Skills = () => {
 
         <div className="md:hidden px-4 relative pt-3">
 
-          <div className={`relative overflow-hidden transition-all duration-700 ease-in-out ${showAllSkills ? "max-h-[1000px]" : "max-h-[450px]"}`}>
+          <div className={`relative overflow-hidden transition-all duration-700 ease-in-out ${showAllSkills ? "max-h-[1100px]" : "max-h-[450px]"}`}>
             {/* Skills Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 py-3">
               {visibleSkills.map((T) => (
@@ -94,7 +105,7 @@ const Skills = () => {
           {/* Show More / Show Less Button */}
           {TechSkills.length > 6 && (
             <div className="flex justify-center">
-              <button onClick={() => setShowAllSkills(!showAllSkills)} className={`px-5 py-2 cursor-pointer ${!showAllSkills ? "absolute bottom-[-5px]" : ""} my-3 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 transition-all duration-300`}>
+              <button onClick={() => setShowAllSkills(!showAllSkills)} className={`px-5 py-2 cursor-pointer ${!showAllSkills ? "absolute bottom-[-10px]" : ""} my-3 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 transition-all duration-300`}>
                 {showAllSkills ? "Show Less" : "Show More"}
               </button>
             </div>
