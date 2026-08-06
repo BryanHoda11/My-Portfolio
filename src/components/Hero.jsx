@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
 
           <p className="text-center lg:text-left text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed max-w-xl">
-            Passionate about creating modern, responsive and interactive web experiences & UI. Explore my Education, Technical skills and Projects.
+            Passionate about creating modern, responsive and interactive web experiences & UI. Explore my Education, Technical skills and Projects!
           </p>
 
           <a href="https://drive.google.com/file/d/1MBE0Jx39ML_pYR_ppKpfKyLF2ZwfyZnE/view?usp=sharing" target="_blank" className="group">

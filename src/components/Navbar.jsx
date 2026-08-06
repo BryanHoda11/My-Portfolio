@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+import { IoLocation } from "react-icons/io5";
 
 const Navbar = () => {
 const [link, setlink] = useState(false);
@@ -13,7 +14,11 @@ const [link, setlink] = useState(false);
         <>
             <nav id='navbar' className='sticky top-0 w-full bg-white z-50 shadow-blue-200'>
               <div className='flex items-center justify-between md:px-5 py-4 px-3'>
-                <div className="logo cursor-default text-blue-500 font-bold logo-font text-lg sm:text-xl flex flex-col md:flex-row md:items-center">Hi, This is Bryan <span className='flex items-center text-xs sm:text-sm text-gray-800 opacity-70 md:px-6'><IoLocationSharp style={{fontSize: '18px'}}/> Mumbai , Maharashtra - India</span></div> 
+                <div className="flex md:items-center flex-col md:flex-row md:gap-3">
+                  <h2 className='cursor-default text-blue-500 font-bold logo-font text-lg sm:text-xl'>Hi, This is Bryan</h2>
+                  <span className='text-gray-500 max-md:hidden'>|</span>
+                  <p className='flex items-center text-xs sm:text-sm text-gray-800 opacity-70'><IoLocation size={17}/> Mumbai , Maharashtra - India</p>
+                </div>
 
                 <div className='links hidden lg:flex items-center gap-10'>
                   <a href='https://github.com/BryanHoda11' target='_blank' rel='noopener noreferrer' className='cursor-pointer text-gray-600 hover:text-blue-500 transition-all duration-500'><FaGithub style={{fontSize: '20px'}}/></a>

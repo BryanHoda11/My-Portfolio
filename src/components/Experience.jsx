@@ -25,23 +25,11 @@ const Experience = () => {
             0
         );
 
-        const years = Math.floor(totalMonths / 12);
-        const remainingMonths = totalMonths % 12;
-
-        if (years === 0) {
-            return `${remainingMonths} month${remainingMonths !== 1 ? "s" : ""}`;
-        }
-
-        if (remainingMonths === 0) {
-            return `${years} year${years !== 1 ? "s" : ""}`;
-        }
-
-        return `${years} yr ${remainingMonths} month${remainingMonths !== 1 ? "s" : ""}`;
+        return `${(totalMonths / 12).toFixed(1)} Years`;
     };
 
     return (
         <>
-
             <div className="relative max-w-4xl mx-auto w-full max-sm:px-3">
 
                 <div className="flex justify-center md:justify-self-end">
