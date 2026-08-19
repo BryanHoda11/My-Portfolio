@@ -73,7 +73,7 @@ const Skills = () => {
   return (
     <>
       <div className="skills my-10">
-        <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center'>TECHNOLOGIES</h2>
+        <h2 className='text-blue-600 text-lg sm:text-xl md:pl-12 text-center'>TECHNOLOGIES & EXPERTISE</h2>
 
         <div className="flex flex-wrap w-[90%] mx-auto max-md:hidden gap-7 justify-center pt-4">
           {TechSkills.map((T) => (
